@@ -33,7 +33,8 @@ jobs:
     steps:
       - name: Setup Pragma
         uses: Silverlan/pragma/github_actions/setup@main
-        branch: 'feat/prebuilt_binaries'
+        with:
+          branch: 'feat/prebuilt_binaries'
         
       - uses: actions/setup-python@v4
         with:
